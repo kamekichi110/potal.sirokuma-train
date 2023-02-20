@@ -1,0 +1,16 @@
+header {
+    position: fixed;
+    background-color: aquamarine;
+}
+main {
+    width: 70%;
+    float: left;
+}
+sub {
+    width: 30%;
+    float: right;
+}
+footer {
+    position: relative;
+    bottom: 0;
+}
