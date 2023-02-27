@@ -16,9 +16,16 @@ article {
 div.side {
     width: 34%;
     order: 1;
+    background-color: darkseagreen;
 }
 main.content {
     max-width: 64%;
     margin: 0 10px;
     order: 2;
+    background-color: paleturquoise;
+}
+header {
+    margin-top: 5px;
+    max-width: 96%;
+    background-color: cornflowerblue;
 }
