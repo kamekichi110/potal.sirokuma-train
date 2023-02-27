@@ -1,0 +1,13 @@
+@font-face {
+    font-family: ui;
+    src: url(./JNRfont.ttf);
+}
+body {
+    font-family: ui;
+    background-color: aquamarine;
+    text-align: center;
+}
+article {
+    width: 99%;
+    display: flex;
+}
