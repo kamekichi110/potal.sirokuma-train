@@ -1,0 +1,17 @@
+img.icon {
+    height: 10%;
+    left: 5px;
+}
+img.content {
+    width: 60%;
+}
+img.tweet {
+    width: 76%;
+}
+img.download {
+    width: 80%;
+}
+img.write {
+    width: 10%;
+    right: 5px;
+}

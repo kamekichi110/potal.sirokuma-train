@@ -9,5 +9,16 @@ body {
 }
 article {
     width: 99%;
+    margin: 0 10px 10px 10px;
     display: flex;
+    font-family: ui;
+}
+div.side {
+    width: 34%;
+    order: 1;
+}
+main.content {
+    max-width: 64%;
+    margin: 0 10px;
+    order: 2;
 }
