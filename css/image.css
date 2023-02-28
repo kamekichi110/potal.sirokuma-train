@@ -1,7 +1,5 @@
 img.icon {
-    width: 10%;
-    left: 5px;
-    text-align: center;
+    width: 100%;
 }
 img.content {
     width: 60%;
@@ -15,4 +13,9 @@ img.download {
 img.write {
     width: 10%;
     right: 5px;
+}
+a.icon {
+    width: 10%;
+    right: 5px;
+    order: 3;
 }

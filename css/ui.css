@@ -33,6 +33,7 @@ header {
 h1.head {
     text-align: center;
     order: 2;
+    font-size: 16px;
 }
 img.write {
     order: 1;
