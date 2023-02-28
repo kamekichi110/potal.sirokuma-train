@@ -13,6 +13,7 @@ img.download {
 img.write {
     width: 10%;
     right: 5px;
+    order: 1;
 }
 a.icon {
     width: 10%;
