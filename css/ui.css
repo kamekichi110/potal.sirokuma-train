@@ -28,6 +28,7 @@ header {
     margin-top: 5px;
     max-width: 96%;
     background-color: cornflowerblue;
+    display: flex;
 }
 h1.head {
     text-align: center;
