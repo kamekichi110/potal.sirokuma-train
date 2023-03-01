@@ -1,0 +1,57 @@
+@font-face {
+    font-family: ui;
+    src: url(./JNRfont.ttf);
+}
+body {
+    font-family: ui;
+    background-color: aquamarine;
+}
+article {
+    width: 99%;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    font-family: ui;
+    text-align: center;
+}
+div.side {
+    width: 34%;
+    order: 1;
+    background-color: darkseagreen;
+}
+main.content {
+    width: 64%;
+    margin: 0 10px;
+    order: 2;
+    background-color: paleturquoise;
+}
+header {
+    margin-top: 5px;
+    max-width: 96%;
+    background-color: cornflowerblue;
+    display: flex;
+}
+h1.head {
+    order: 2;
+    font-size: 16px;
+}
+img.write {
+    order: 1;
+}
+img.icon {
+    order: 3;
+}
+article p {
+    font-size: 0.5em;
+}
+article a {
+    font-size: 0.5em;
+}
+article h2 {
+    font-size: 0.8em;
+}
+article h3 {
+    font-size: 0.6em;
+}
+article h1 {
+    font-size: 1em;
+}
