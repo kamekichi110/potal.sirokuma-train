@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修正フォーム</title>
+    <link rel="stylesheet" href="./form-1.css">
+    <style>
+        body {
+            text-align: center;
+			background-color: aqua;
+        }
+		header {
+			width: 80%;
+			padding: 2%;
+			background-color: cornflowerblue;
+		}
+    </style>
+</head>
+<script type="text/javascript">
+	    let submitted = false;
+		</script>
+		<iframe
+		    name="hidden_iframe"
+			    id="hidden_iframe"
+				    style="display: none"
+					    onload="if(submitted){window.location='./thanks.html';}"
+						></iframe>
+<body>
+    <header>
+        <h1>しろくま鉄道写真館</h1>
+        <br>
+        <h2>修正フォーム</h2>
+    </header>
+    <p style="text-align: center; margin: 40px auto">
+		修正依頼フォーム
+            </p>
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSeobVq65_DFR22us255SJivGvHM9sPHHzElHcKz9IpEZjwULw/formResponse" method="POST"
+			    target="hidden_iframe"
+				    onsubmit="submitted=true;" class="c-form">
+            	<div class="c-form__item">
+                		<label class="c-form__label" for="field-name"
+                        			>修正したいページの車両名<span class="c-form__required">必須</span></label
+                                    		>
+                                            		<input
+													name="entity.1168185382"
+                                                    			class="c-form__input"
+                                                                			id="field-name"
+                                                                            			placeholder="車両名"
+                                                                                        			type="text"
+                                                                                                    			required="required"
+                                                                                                                		/>
+                                                                                                                        	</div>
+                                                                                                                            	<div class="c-form__item">
+                                                                                                                                		<label class="c-form__label" for="field-mail"
+                                                                                                                                        			>修正箇所（具体的）<span class="c-form__required">必須</span></label
+                                                                                                                                                    		>
+                                                                                                                                                            		<textarea
+																																									name="entity.45088717"
+                                                                                                                                                                    			class="c-form__input"
+                                                                                                                                                                                			id="field-mail"
+                                                                                                                                                                                            			placeholder="sample@gmail.com"
+                                                                                                                                                                                                        			cols="70%" rows="50px"
+                                                                                                                                                                                                                    			required="required"
+                                                                                                                                                                                                                                		></textarea>
+                                                                                                                                                                                                                                        	</div>
+                                                                                                                                                                                                                                            	<div class="c-form__item">
+                                                                                                                                                                                                                                                		<label class="c-form__label" for="field-message">修正後の文章または単語</label>
+                                                                                                                                                                                                                                                        		<textarea
+																																																																name="entity.2106218871"
+                                                                                                                                                                                                                                                                			class="c-form__input"
+                                                                                                                                                                                                                                                                            			id="field-message"
+                                                                                                                                                                                                                                                                                        			placeholder="単語の場合は/で分けてください。"
+																																																																									required="required"
+                                                                                                                                                                                                                                                                                                    		></textarea>
+                                                                                                                                                                                                                                                                                                            	</div>
+                                                                                                                                                                                                                                                                                                                	<div class="c-form__submit">
+                                                                                                                                                                                                                                                                                                                    		<button type="submit">送信</button>
+                                                                                                                                                                                                                                                                                                                            	</div>
+                                                                                                                                                                                                                                                                                                                                </form>
+</body>
+</html>
