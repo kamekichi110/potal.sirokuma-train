@@ -1,0 +1,20 @@
+.red {
+    color: red;
+}
+.green {
+    color: greenyellow;
+}
+.blue {
+    color: darkturquoise;
+}
+.brown {
+    color: peru;
+}
+.orange {
+    color: orange;
+}
+a.btn-1 {
+    background-color: coral;
+    color: white;
+    border-radius: 30px;
+}
