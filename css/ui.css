@@ -5,6 +5,7 @@
 body {
     font-family: ui;
     background-color: aquamarine;
+    width: 1080px;
 }
 article {
     width: 99%;
