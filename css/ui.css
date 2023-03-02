@@ -14,12 +14,12 @@ article {
     text-align: center;
 }
 div.side {
-    width: 30%;
+    width: 34%;
     order: 1;
     background-color: darkseagreen;
 }
 main.content {
-    width: 68%;
+    width: 64%;
     margin: 0 10px;
     order: 2;
     background-color: paleturquoise;
