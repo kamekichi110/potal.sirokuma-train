@@ -14,8 +14,6 @@ img.write {
     width: 10%;
     right: 5px;
 }
-a.icon {
-    width: 10%;
-    right: 5px;
+a.write {
     order: 3;
 }
