@@ -15,12 +15,12 @@ article {
     text-align: center;
 }
 div.side {
-    width: 34%;
+    width: 20%;
     order: 1;
     background-color: darkseagreen;
 }
 main.content {
-    width: 64%;
+    width: 74%;
     margin: 0 10px;
     order: 2;
     background-color: paleturquoise;
