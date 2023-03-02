@@ -3,6 +3,11 @@ img.icon {
 }
 img.content {
     width: 60%;
+    padding: 2%;
+    border-radius: 12%;
+    border-color: black;
+    border-bottom: 2px;
+    border-style: dotted;
 }
 img.tweet {
     width: 76%;
