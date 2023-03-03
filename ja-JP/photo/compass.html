@@ -76,13 +76,6 @@
                 } else if (degrees > 292.5 && degrees < 337.5) {
                     direction = "北西";
                 }
-
-                document.querySelector("#direction").innerHTML =
-                    direction + " : " + degrees;
-                document.querySelector("#absolute").innerHTML = absolute;
-                document.querySelector("#alpha").innerHTML = alpha;
-                document.querySelector("#beta").innerHTML = beta;
-                document.querySelector("#gamma").innerHTML = gamma;
             }
 
             // 端末の傾き補正（Android用）
