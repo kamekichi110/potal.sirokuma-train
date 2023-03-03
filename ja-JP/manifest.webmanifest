@@ -3,7 +3,7 @@
     "background_color": "#50e3c2",
     "display": "standalone",
     "scope": "/potal",
-    "start_url": "kamekichi110.github.io/potal.sirokuma-train/ja-JP/",
+    "start_url": "https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/index.html",
     "name": "\u3057\u308d\u304f\u307e\u9244\u9053\u30dd\u30fc\u30bf\u30eb",
     "short_name": "\u3057\u308d\u304f\u307e\u9244\u9053\u30dd\u30fc\u30bf\u30eb",
     "description": "web-potal",
