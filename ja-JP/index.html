@@ -13,7 +13,10 @@
     <link rel="manifest" href="./manifest.json">
     <link rel="apple-touch-icon" href="./apple-touch-icon-180x180.png">
     <link rel="shortcut icon" href="./icon.ico" type="image/x-icon">
-    <script src="./js/serviceWorker.js"></script>
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./icon-192x192.png">
+    <script>
+        navigator.serviceWorker.register('serviceWorker.js');
+    </script>
 </head>
 <body>
     <header>
