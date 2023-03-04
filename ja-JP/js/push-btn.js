@@ -1,4 +1,4 @@
-function push() {
+
     push.Permission.request();
     Push.create('ページ詳細', {
         body: 'バージョン1.2,最終更新:2023/03/04',
@@ -30,4 +30,3 @@ function push() {
                 console.log(this);
                 }
                 });
-}
