@@ -61,11 +61,11 @@ serviceWorker.register('service.js').then(() => {
             <a href="https://twitter.com/sirokuma2468">不具合報告・ご意見はDMにて。</a>
             <br>
             <hr>
-            <button type="button" onclick="push()">お知らせ受信</button>
+            <a href="./notice/index.html">お知らせ一括受信</a>
             <br>
-            <p>お知らせ受信するには
+            <p>お知らせ受信のページに
                 <br>
-                通知を許可してください。</p>
+                移動します。</p>
                 <br>
                 <hr>
             <br><br>
@@ -88,6 +88,7 @@ serviceWorker.register('service.js').then(() => {
     </article>
     </body>
     <script type="module">
+<<<<<<< HEAD
     // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
@@ -111,4 +112,28 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 </script>
+=======
+          // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+              import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+                // TODO: Add SDKs for Firebase products that you want to use
+                  // https://firebase.google.com/docs/web/setup#available-libraries
+
+                    // Your web app's Firebase configuration
+                      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+                        const firebaseConfig = {
+                            apiKey: "AIzaSyD-AFjORyQ4YytZ7-SPsm5dja1ywYLrL1A",
+                                authDomain: "sirokuma-potal-train.firebaseapp.com",
+                                    projectId: "sirokuma-potal-train",
+                                        storageBucket: "sirokuma-potal-train.appspot.com",
+                                            messagingSenderId: "289689792117",
+                                                appId: "1:289689792117:web:608b38ed45b8de5962523c",
+                                                    measurementId: "G-6SJV3BG941"
+                                                      };
+
+                                                        // Initialize Firebase
+                                                          const app = initializeApp(firebaseConfig);
+                                                            const analytics = getAnalytics(app);
+                                                            </script>
+>>>>>>> 24b3529937b877ab04843a65b83b85be88e2a9e7
 </html>
