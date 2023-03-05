@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../../css/image.css">
     <link rel="stylesheet" href="../../css/ui.css">
     <link rel="shortcut icon" href="../../../icon .ico" type="image/x-icon">
-    <script src="./js/img.js"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
     <header>
@@ -32,8 +32,12 @@
         <main class="content">
             <h2>ウォーターマーク加工<br>（著作権表示）</h2>
             <br>
-            <input type="file" name="file" id="file">
-            <canvas id="result"></canvas>
+            <div class="upload"><input type="file" name="file" id="file">
+                  </div>
+                    <label>テキスト入力:<input type="text" id="mark"></label>
+                    <input type="button" value="反映" onclick="addText()">
+                           <canvas id="canvas"></canvas>
+                           <div id="result"></div>
         </main>
     </article>
 </body>
