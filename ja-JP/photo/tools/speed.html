@@ -41,12 +41,22 @@ function test() {
                                                             font-size: 56px;
                                                         }
                                                     </style>
+                                                    <link rel="shortcut icon" href="../../icon .ico" type="image/x-icon">
                                                     </head>
                                                     <body>
+                                                        <header>
+                                                            <h1 class="head">しろくま鉄道ポータル</h1>
+                                                            <h2 class="head">高精度GPSスピードメーター</h2>
+                                                        </header>
                                                     <button onclick="test()">計測開始（GPSを使用します。）</button>
-                                                    <button onclick="clear()">計測停止</button>
-
+                                                    <font color="red">
+                                                    <strong><p>注意！</p></strong>
+                                                    <p>このサービスではGPS機能を使用します。</p>
+                                                    <p>GPSを有効にしないと正常に作動しません。</p>
+                                                    </font>
+                                                    <br>
+                                                    <hr>
                                                     <pre id="position_view" class="font1"></pre>
-
+                                                    <hr>
                                                     </body>
                                                     </html>
