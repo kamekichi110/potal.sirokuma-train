@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css/ui.css">
+    <style>
+        @font-face {
+            font-family: ui;
+            src: url(../../css/JNRfont.ttf);
+        }
+        body {
+            font-family: ui;
+        }
+    </style>
+    <script src="./img.js"></script>
+</head>
+<body>
+    <div class="upload"><input type="file" name="file" id="file">
+          </div>
+            <label>テキスト入力:<input type="text" id="mark"></label>
+            <input type="button" value="反映" onclick="addText()">
+                   <canvas id="canvas"></canvas>
+                   <div id="result"></div>
+</body>
+</html>
