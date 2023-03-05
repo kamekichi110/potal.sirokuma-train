@@ -6,6 +6,9 @@ body {
     font-family: ui;
     background-color: aquamarine;
 }
+.font1{
+    font-family: ui;
+}
 article {
     width: 99%;
     margin: 0 10px 10px 10px;
