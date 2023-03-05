@@ -8,6 +8,8 @@ body {
 }
 .font1{
     font-family: ui;
+    width: 99%;
+    font-size: 1em;
 }
 article {
     width: 99%;
