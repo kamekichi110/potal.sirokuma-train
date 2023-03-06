@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <title>現在位置を表示-2</title>
+      <script>
+          var watch_id = 0;  // 監視識別ID
+              function getPosi2() {
+                    var button2 = document.getElementById('button2');
+                            if( watch_id > 0 ) {
+                                      // リアルタイム監視を停止
+                                                window.navigator.geolocation.clearWatch(watch_id);
+                                                          // 監視識別IDに0をセット
+                                                                    watch_id = 0;
+                                                                              // ボタン表記を変更
+                                                                                        button2.textContent = " 現在地を確認 ";
+                                                                                                } else {
+                                                                                                          // リアルタイム監視を開始
+                                                                                                                    watch_id = window.navigator.geolocation.watchPosition(monitor);
+                                                                                                                              // ボタン表記を変更
+                                                                                                                                        button2.textContent = " 測定停止 ";
+                                                                                                                                                }
+                                                                                                                                                    };//   ----------------
+                                                                                                                                                        // watchPosition  位置情報取得完了時の処理
+                                                                                                                                                            function monitor(event) {   
+                                                                                                                                                                    var gl_text2 = "緯度：" + event.coords.latitude + "度<br>";
+                                                                                                                                                                            gl_text2 += "経度：" + event.coords.longitude + "度<br>";
+                                                                                                                                                                                    gl_text2 += "高度：" + event.coords.altitude + "m<br>";
+                                                                                                                                                                                            gl_text2 += "位置の誤差：" + event.coords.accuracy + "m<br>";
+                                                                                                                                                                                                    gl_text2 += "高度の誤差：" + event.coords.altitudeAccuracy + "<br>";
+                                                                                                                                                                                                            gl_text2 += "方角：" + event.coords.heading + "<br>";
+                                                                                                                                                                                                                    gl_text2 += "速度：" + event.coords.speed + "<br>";
+                                                                                                                                                                                                                            // タイムスタンプ
+                                                                                                                                                                                                                            	var date = event.timestamp;
+                                                                                                                                                                                                                                	if( typeof(date) == "number" ) { date = new Date(date); }
+                                                                                                                                                                                                                                    	gl_text2 += "時刻：" + date + "<br>";
+                                                                                                                                                                                                                                                document.getElementById("show_result2").innerHTML = gl_text2;
+                                                                                                                                                                                                                                                    };//   -----------------
+                                                                                                                                                                                                                                                      </script>
+                                                                                                                                                                                                                                                      </head>
+                                                                                                                                                                                                                                                      <body>
+                                                                                                                                                                                                                                                        <div class="view" style="padding:15px;">
+                                                                                                                                                                                                                                                            <button id="button2" onclick="getPosi2()">現在地を確認</button><br><br>
+                                                                                                                                                                                                                                                                <div id="show_result2"> ↑ クリックで、ここに位置情報を表示・停止</div>
+                                                                                                                                                                                                                                                                  </div>
+                                                                                                                                                                                                                                                                  </body>
+                                                                                                                                                                                                                                                                  </html>
+                                                                                                                                                                                                                                                                  測定停止
+
+                                                                                                                                                                                                                                                                  緯度：35.776887度
+                                                                                                                                                                                                                                                                  経度：139.7210636度
+                                                                                                                                                                                                                                                                  高度：46m
+                                                                                                                                                                                                                                                                  位置の誤差：96m
+                                                                                                                                                                                                                                                                  高度の誤差：null
+                                                                                                                                                                                                                                                                  方角：null
+                                                                                                                                                                                                                                                                  速度：0.00009809179027797654
+                                                                                                                                                                                                                                                                  時刻：Mon Mar 06 2023 11:53:16 GMT+0900 (日本標準時)
+                                                                                                                                                                                                                                                                  
