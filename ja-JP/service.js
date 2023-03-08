@@ -1,4 +1,4 @@
-let baseURL = '/';
+let baseURL = 'https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/';
 
 self.addEventListener('push', event => {
     let json = event.data.json();
