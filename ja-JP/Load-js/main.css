@@ -18,3 +18,12 @@
     width: 100%;
     height: 100%;
 }
+body {
+    visibility: hidden;
+    transition: all 1s;
+    transition-delay: 0.5s;
+}
+.loaded {
+    opacity: 0;
+    transition: all 1s;
+}
