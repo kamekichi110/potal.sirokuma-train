@@ -5,6 +5,7 @@
 body {
     font-family: ui;
     background-color: aquamarine;
+    display: flex;
 }
 article {
     width: 99%;

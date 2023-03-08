@@ -19,6 +19,7 @@
     <script src="./js/push-sys.js"></script>
     <script src="./js/push-log.js"></script>
     <script src="./js/push-btn.js"></script>
+    <link rel="stylesheet" href="./Load-js/main.css">
 </head>
 <body>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
@@ -38,6 +39,12 @@ serviceWorker.register('service.js').then(() => {
     });
 });
 </script>
+<div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+    <h2>data&nbsp;loading...</h2>
+</div>
     <header>
         <h1 class="head">しろくま鉄道ポータル</h1>
         <img src="../icon/potal_icon.png" alt="icon" class="icon">
