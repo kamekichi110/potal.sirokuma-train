@@ -6,5 +6,9 @@ Push.create('しろくま鉄道ポータル:system', {
     onClick: function() {
     // 通知がクリックされた場合の設定
     window.location.href = "https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/notice/";
+    },
+    onShow: function() {
+        const audio = new Audio('https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/js/notice.mp3');
+        audio.play();
     }
     });
