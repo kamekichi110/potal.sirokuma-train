@@ -1,8 +1,13 @@
+@font-face {
+    font-family: ui;
+    src: url(../css/JNRfont.ttf);
+}
 header {
     width: 98%;
     background-color: cadetblue;
     border-radius: 5px;
     border-color: bisque;
+    font-size: 1em;
 }
 article {
     width: 98%;
@@ -20,6 +25,8 @@ article div.side {
 }
 body {
     background-image: url(./dirt.png);
+    width: 100%;
+    font-family: ui;
 }
 div.box0 {
     border: 2px;
