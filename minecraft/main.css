@@ -21,3 +21,8 @@ article div.side {
 body {
     background-image: url(./dirt.png);
 }
+div.box0 {
+    border: 2px;
+    border-radius: 2px;
+    border-style: none;
+}
