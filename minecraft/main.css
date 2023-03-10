@@ -11,12 +11,12 @@ article {
 }
 article main.content {
     width: 76%;
-    background-color: coral;
     align-items: center;
 }
 article div.side {
     width: 22%;
     background-color: burlywood;
+    border-bottom: 2px;
 }
 body {
     background-image: url(./dirt.png);
