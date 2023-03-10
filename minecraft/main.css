@@ -1,0 +1,23 @@
+header {
+    width: 98%;
+    background-color: cadetblue;
+    border-radius: 5px;
+    border-color: bisque;
+}
+article {
+    width: 98%;
+    text-align: center;
+    display: flex;
+}
+article main.content {
+    width: 76%;
+    background-color: coral;
+    align-items: center;
+}
+article div.side {
+    width: 22%;
+    background-color: burlywood;
+}
+body {
+    background-image: url(./dirt.png);
+}
