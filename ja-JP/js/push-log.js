@@ -12,9 +12,3 @@ Push.create('しろくま鉄道ポータル:system', {
         audio.play();
     }
     });
-Push.create('だいぶ大雑把な天気予報', {
-    body: 'だいたい晴れ',
-    icon: 'https://kamekichi110.github.io/potal.sirokuma-train/ja-JP',
-    timeout: 5000,
-    vibrate: [250, 100, 150]
-})
