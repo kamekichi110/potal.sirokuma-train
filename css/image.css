@@ -22,3 +22,7 @@ a.write {
     order: 1;
     font-size: 2px;
 }
+img.use {
+    width: 60%;
+    border: 5px solid;
+}
