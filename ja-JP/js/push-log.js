@@ -5,10 +5,16 @@ Push.create('しろくま鉄道ポータル:system', {
     vibrate: [250, 100, 150], // モバイル端末でのバイブレーション秒数
     onClick: function() {
     // 通知がクリックされた場合の設定
-    window.location.href = "https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/notice/";
+    window.location.href = 'https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/notice/';
     },
     onShow: function() {
         const audio = new Audio('https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/js/notice.mp3');
         audio.play();
     }
     });
+Push.create('だいぶ大雑把な天気予報', {
+    body: 'だいたい晴れ',
+    icon: 'https://kamekichi110.github.io/potal.sirokuma-train/ja-JP',
+    timeout: 5000,
+    vibrate: [250, 100, 150]
+})
