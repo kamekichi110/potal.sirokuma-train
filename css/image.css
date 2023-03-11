@@ -25,5 +25,5 @@ a.write {
 img.use {
     width: 60%;
     border: 5px solid;
-    border-radius: 2.5px;
+    border-radius: 10px;
 }
