@@ -55,3 +55,10 @@ article h1 {
 p.use {
     font-size: 0.3em;
 }
+@font-face {
+    font-family: train;
+    src: url(./JNRfont.ttf);
+}
+.font_train {
+    font-family: train;
+}

@@ -1,3 +1,10 @@
+@font-face {
+    font-family: train;
+    src: url(./JNRfont.ttf);
+}
+.font_train {
+    font-family: train;
+}
 body {
     background-color: aquamarine;
 }
