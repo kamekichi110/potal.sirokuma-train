@@ -1,0 +1,7 @@
+@font-face {
+    font-family: main;
+    src: url(./NotoSansJP-Regular.otf);
+}
+h1.font_main {
+    font-family: main;
+}
