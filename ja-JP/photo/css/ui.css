@@ -1,20 +1,13 @@
-@font-face {
-    font-family: ui;
-    src: url(./JNRfont.ttf);
-}
 body {
-    font-family: ui;
     background-color: aquamarine;
 }
 .font1{
-    font-family: ui;
     font-size: 2em;
 }
 article {
     width: 99%;
     margin: 0 10px 10px 10px;
     display: flex;
-    font-family: ui;
     text-align: center;
 }
 div.side {
