@@ -1,0 +1,5 @@
+access-data: "https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/"
+count: 59
+data-size: 74.5MB
+final-update:2023/03/12/09:03
+page-title:"しろくま鉄道ポータル"
