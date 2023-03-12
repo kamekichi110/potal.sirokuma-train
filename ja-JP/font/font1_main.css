@@ -1,0 +1,24 @@
+@font-face {
+    font-family: font1_main;
+    src: url(./DotGothic16-Regular.ttf);
+}
+@font-face {
+    font-family: font1_sub;
+    src: url(./PottaOne-Regular.ttf);
+}
+@font-face {
+    font-family: font_secondary;
+    src: url(./YuseiMagic-Regular.ttf);
+}
+.font1_main {
+    font-family: font1_main;
+}
+.font1_sub {
+    font-family: font1_sub;
+}
+.font_secondary {
+    font-family: font_secondary;
+}
+.font_red {
+    color: red;
+}
