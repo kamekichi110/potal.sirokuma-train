@@ -54,6 +54,7 @@ article h1 {
 }
 p.use {
     font-size: 0.3em;
+    color: red;
 }
 @font-face {
     font-family: train;
