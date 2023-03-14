@@ -1,12 +1,16 @@
 .scroll {
     display: flex;
-    width: 320px;
+    width: 100%;
     overflow-x: scroll;
 }
 .sc_panel {
-    width: 300px;
+    width: 98%;
     margin: 10px;
     flex-shrink: 0;
+}
+.sc_panel img {
+  width: 96%;
+  border: 2px solid;
 }
 .scroll::-webkit-scrollbar {
       height: 14px; /* スクロールバーの高さ */
@@ -21,4 +25,3 @@
             background: #f5deb3; /* トラックの色 */
               border-radius: 7px; /* トラック両端の丸み */
               }
-}
