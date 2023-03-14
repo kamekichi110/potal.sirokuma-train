@@ -1,0 +1,15 @@
+@font-face {
+    font-family: audio-page;
+    src: url(../../css/JNRfont.ttf);
+}
+body {
+    background-color: cornflowerblue;
+    font-family: audio-page;
+}
+header {
+    width: 96%;
+    background-color: aquamarine;
+}
+audio {
+    width: 60%;
+}
