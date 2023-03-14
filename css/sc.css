@@ -1,6 +1,6 @@
 .scroll {
     display: flex;
-    width: 100%;
+    width: 96%;
     overflow-x: scroll;
 }
 .sc_panel {
