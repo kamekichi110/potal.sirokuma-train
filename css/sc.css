@@ -1,0 +1,24 @@
+.scroll {
+    display: flex;
+    width: 320px;
+    overflow-x: scroll;
+}
+.sc_panel {
+    width: 300px;
+    margin: 10px;
+    flex-shrink: 0;
+}
+.scroll::-webkit-scrollbar {
+      height: 14px; /* スクロールバーの高さ */
+      }
+
+      .scope::-webkit-scrollbar-thumb {
+        background: #d2b48c; /* ツマミの色 */
+          border-radius: 7px; /* ツマミ両端の丸み */
+          }
+
+          .scroll::-webkit-scrollbar-track {
+            background: #f5deb3; /* トラックの色 */
+              border-radius: 7px; /* トラック両端の丸み */
+              }
+}
