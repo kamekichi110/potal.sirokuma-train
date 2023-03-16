@@ -17,7 +17,7 @@
       }
 
       .scope::-webkit-scrollbar-thumb {
-        background: #d2b48c; /* ツマミの色 */
+        background: brown; /* ツマミの色 */
           border-radius: 7px; /* ツマミ両端の丸み */
           }
 
