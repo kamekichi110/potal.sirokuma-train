@@ -22,7 +22,7 @@
     <script src="./js/push-log.js"></script>
     <script src="./js/push-btn.js"></script>
     <link rel="stylesheet" href="./style.css">
-
+    <link rel="stylesheet" href="./menu.css">
 </head>
     <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
     <body>
@@ -43,6 +43,14 @@ serviceWorker.register('service.js').then(() => {
 });
 </script>
     <header class="font1_main">
+        <nav id='menu'>
+              <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                    <li><a href='https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/'>ポータルホーム</a></li>
+                        <li><a href='https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/photo/'>写真館ホーム</a></li>
+                            <li><a href='https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/version.html'>バージョン情報</a></li>
+                              </ul>
+                              </nav>
         <h1 class="head">しろくま鉄道ポータル</h1>
         <img src="../icon/potal_icon.png" alt="icon" class="icon">
         <br>
