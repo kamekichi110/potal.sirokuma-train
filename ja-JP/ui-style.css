@@ -1,0 +1,22 @@
+.layout {
+    width: 360px;
+    height: 800px;
+  
+    display: grid;
+    grid:
+      "header header header" auto
+      "leftSide body ." 1fr
+      "footer footer footer" auto
+      / auto 1fr auto;
+    gap: 8px;
+  }
+  
+  .header { grid-area: header; }
+  .leftSide { grid-area: leftSide; }
+  .body { grid-area: body; }
+  .footer { grid-area: footer; }
+  section.layout {background-color: #669d34}
+  div.header {background-color: #93e3fd}
+  div.leftSide {background-color: #ff8648}
+  div.body {background-color: #b1dd8b}
+  div.footer {background-color: #ffab01}
