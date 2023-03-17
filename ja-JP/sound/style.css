@@ -13,3 +13,6 @@ header {
 audio {
     width: 80%;
 }
+header h1.head {
+    font-size: 1em;
+}
