@@ -1,0 +1,57 @@
+@font-face {
+    font-family: main;
+    src: url(../font/JNRfont_n.ttf);
+}
+@font-face {
+    font-family: sub1;
+    src: url(../font/DotGothic16-Regular.ttf);
+}
+@font-face {
+    font-family: sub2;
+    src: url(../font/PottaOne-Regular.ttf);
+}
+body {
+    max-width: 420px;
+    min-width: 320px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+header {
+    width: 96%;
+    background-color: cadetblue;
+    font-family: sub2;
+}
+article {
+    width: 96%;
+}
+article div.side {
+    width: 25%;
+    background-color: coral;
+    font-family: sub1;
+    font-size: 1em;
+    color: brown;
+}
+article main {
+    width: 72%;
+    font-family: main;
+    background-color: darkseagreen;
+}
+div.scroll {
+    width: 80%;
+    height: 150px;
+    border: 1px brown solid;
+    overflow-x: scroll;
+}
+div.scroll-panel {
+    width: 70%;
+    font-size: 1em;
+}
+div.scroll-panel img {
+    width: 96%;
+    border: 0.5px black solid;
+}
+header h1.head {
+    font-size: 1em;
+}
