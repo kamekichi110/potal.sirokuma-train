@@ -1,0 +1,47 @@
+@font-face {
+  font-family: main;
+  src: url(../../css/JNRfont.ttf);
+}
+body{
+  background-color: black;
+  font-family: main;
+}
+.page {  display: grid;
+  grid-template-columns: 1.2fr 0.8fr 1fr;
+    grid-template-rows: 1.4fr 1.9fr 1.9fr 0.5fr;
+      grid-auto-rows: 1fr;
+        gap: 0px 0px;
+          grid-auto-flow: row;
+            grid-template-areas:
+                "header header header"
+                    "index content content"
+                        "index content content"
+                            "footer footer footer";
+                            }
+
+                            .header {  display: grid;
+                              background-color: cadetblue;
+                              grid-template-columns: 1fr 1fr 1fr;
+                                grid-template-rows: 1fr 1fr 1fr;
+                                  gap: 0px 0px;
+                                    grid-auto-flow: row;
+                                      grid-template-areas:
+                                          "header-main header-main header-main"
+                                              "header-main header-main header-main"
+                                                  "header-sub header-sub header-sub";
+                                                    grid-area: header;
+                                                    }
+
+                                                    .header-main { grid-area: header-main; }
+
+                                                    .header-sub { grid-area: header-sub; }
+
+                                                    .index { grid-area: index;
+                                                    background-color: bisque; }
+
+                                                    .content { grid-area: content;
+                                                    background-color: aquamarine; }
+
+                                                    .footer { grid-area: footer;
+                                                    background-color: gold; }
+                                                    

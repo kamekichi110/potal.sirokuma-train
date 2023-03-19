@@ -1,3 +1,11 @@
+@font-face {
+  font-family: main;
+  src: url(../../css/JNRfont.ttf);
+}
+body {
+  background-color: black;
+  font-family: main;
+}
 .page {  display: grid;
   grid-template-columns: 0.9fr 1.1fr 1fr;
     grid-template-rows: 1.4fr 2fr 1.9fr 0.4fr;
@@ -12,6 +20,7 @@
                             }
 
                             .header {  display: grid;
+                              background-color: cadetblue;
                               grid-template-columns: 1fr 1fr 1fr;
                                 grid-template-rows: 1.8fr 0.2fr 1fr;
                                   gap: 0px 0px;
@@ -28,6 +37,7 @@
                                                     .header-sub { grid-area: header-sub; }
 
                                                     .links {  display: grid;
+                                                      background-color: bisque;
                                                       grid-template-columns: 1fr 1fr 1fr;
                                                         grid-template-rows: 1.6fr 0.1fr 1.4fr;
                                                           gap: 0px 0px;
@@ -44,6 +54,7 @@
                                                                             .back { grid-area: back; }
 
                                                                             .content {  display: grid;
+                                                                              background-color: aquamarine;
                                                                               grid-template-columns: 1fr 1fr 1fr;
                                                                                 grid-template-rows: 1.5fr 1.2fr 0.3fr;
                                                                                   gap: 0px 0px;
@@ -68,10 +79,13 @@
                                                                                                                             }
 
                                                                                                                             .img-main { grid-area: img-main; }
-
+                                                                                                                            .img-main img { width: 96%; }
                                                                                                                             .img-use { grid-area: img-use; }
+                                                                                                                            .img-use p { color: red; }
 
-                                                                                                                            .content-main { grid-area: content-main; }
+                                                                                                                            .content-main { grid-area: content-main;
+                                                                                                                            background-color: beige; }
 
-                                                                                                                            .footer { grid-area: footer; }
+                                                                                                                            .footer { grid-area: footer;
+                                                                                                                            background-color: gold; }
                                                                                                                             

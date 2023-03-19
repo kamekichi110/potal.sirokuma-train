@@ -1,3 +1,11 @@
+@font-face {
+  font-family: main;
+  src: url(../../css/JNRfont.ttf);
+}
+body {
+  background-color: black;
+  font-family: main;
+}
 .home {  display: grid;
   grid-template-columns: 0.9fr 1.1fr 1fr;
     grid-template-rows: 1.4fr 2fr 1.9fr 0.4fr;
@@ -11,9 +19,11 @@
                             "news footer footer";
                             }
 
-                            .index { grid-area: index; }
+                            .index { grid-area: index;
+                            background-color: bisque; }
 
                             .content {  display: grid;
+                              background-color: aquamarine;
                               grid-template-columns: 1fr 1fr 1fr;
                                 grid-template-rows: 0.8fr 1.1fr 1.1fr;
                                   gap: 0px 0px;
@@ -52,6 +62,7 @@
                                                                             .box_0 { grid-area: box_0; }
 
                                                                             .box_2 {  display: grid;
+                                                                              background-color: cornflowerblue;
                                                                               grid-template-columns: 1fr 1fr 1fr;
                                                                                 grid-template-rows: 0.8fr 1.1fr 1.1fr;
                                                                                   gap: 0px 0px;
@@ -71,11 +82,14 @@
 
                                                                                                     .box2-1 { grid-area: box2-1; }
 
-                                                                                                    .news { grid-area: news; }
+                                                                                                    .news { grid-area: news; 
+                                                                                                    background-color: burlywood;}
 
-                                                                                                    .footer { grid-area: footer; }
+                                                                                                    .footer { grid-area: footer;
+                                                                                                    background-color: gold; }
 
                                                                                                     .header {  display: grid;
+                                                                                                      background-color: cadetblue;
                                                                                                       grid-template-columns: 0.5fr 1.3fr 1.2fr;
                                                                                                         grid-template-rows: 1fr 0.9fr 1.1fr;
                                                                                                           gap: 0px 0px;
