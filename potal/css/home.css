@@ -1,0 +1,93 @@
+.home {  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1.4fr 2fr 1.9fr 0.4fr;
+      grid-auto-rows: 1fr;
+        gap: 0px 0px;
+          grid-auto-flow: row;
+            grid-template-areas:
+                "header header header"
+                    "index content content"
+                        "news content content"
+                            "news footer footer";
+                            }
+
+                            .index { grid-area: index; }
+
+                            .content {  display: grid;
+                              grid-template-columns: 1fr 1fr 1fr;
+                                grid-template-rows: 0.8fr 1.1fr 1.1fr;
+                                  gap: 0px 0px;
+                                    grid-auto-flow: row;
+                                      grid-template-areas:
+                                          "box_0 box_0 box_0"
+                                              "box_1 box_1 box_1"
+                                                  "box_2 box_2 box_2";
+                                                    grid-area: content;
+                                                    }
+
+                                                    .box_1 {  display: grid;
+                                                      grid-template-columns: 1fr 1fr 1fr;
+                                                        grid-template-rows: 1fr 1fr 1fr;
+                                                          gap: 0px 0px;
+                                                            grid-auto-flow: row;
+                                                              grid-template-areas:
+                                                                  "box_1-txt1 box_1-txt1 img_box1-1"
+                                                                      "img_box1-2 box_1-txt2 box_1-txt2"
+                                                                          "box_1-txt3 box_1-txt3 img_box1-3";
+                                                                            grid-area: box_1;
+                                                                            }
+
+                                                                            .box_1-txt1 { grid-area: box_1-txt1; }
+
+                                                                            .img_box1-1 { grid-area: img_box1-1; }
+
+                                                                            .box_1-txt2 { grid-area: box_1-txt2; }
+
+                                                                            .img_box1-2 { grid-area: img_box1-2; }
+
+                                                                            .box_1-txt3 { grid-area: box_1-txt3; }
+
+                                                                            .img_box1-3 { grid-area: img_box1-3; }
+
+                                                                            .box_0 { grid-area: box_0; }
+
+                                                                            .box_2 {  display: grid;
+                                                                              grid-template-columns: 1fr 1fr 1fr;
+                                                                                grid-template-rows: 0.8fr 1.1fr 1.1fr;
+                                                                                  gap: 0px 0px;
+                                                                                    grid-auto-flow: row;
+                                                                                      grid-template-areas:
+                                                                                          "box2_head box2_head box2_head"
+                                                                                              "box2-1 box2-2 box2-3"
+                                                                                                  "box2-1 box2-2 box2-3";
+                                                                                                    grid-area: box_2;
+                                                                                                    }
+
+                                                                                                    .box2_head { grid-area: box2_head; }
+
+                                                                                                    .box2-3 { grid-area: box2-3; }
+
+                                                                                                    .box2-2 { grid-area: box2-2; }
+
+                                                                                                    .box2-1 { grid-area: box2-1; }
+
+                                                                                                    .news { grid-area: news; }
+
+                                                                                                    .footer { grid-area: footer; }
+
+                                                                                                    .header {  display: grid;
+                                                                                                      grid-template-columns: 0.5fr 1.3fr 1.2fr;
+                                                                                                        grid-template-rows: 1fr 0.9fr 1.1fr;
+                                                                                                          gap: 0px 0px;
+                                                                                                            grid-auto-flow: row;
+                                                                                                              grid-template-areas:
+                                                                                                                  "header-main header-main header-main"
+                                                                                                                      "header-main header-main header-main"
+                                                                                                                          "header-sub header-sub header-sub";
+                                                                                                                            grid-area: header;
+                                                                                                                            }
+
+                                                                                                                            .header-main { grid-area: header-main; }
+
+                                                                                                                            .header-sub { grid-area: header-sub; }
+                                                                                                                            

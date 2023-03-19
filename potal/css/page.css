@@ -1,0 +1,77 @@
+.page {  display: grid;
+  grid-template-columns: 0.9fr 1.1fr 1fr;
+    grid-template-rows: 1.4fr 2fr 1.9fr 0.4fr;
+      grid-auto-rows: 1fr;
+        gap: 0px 0px;
+          grid-auto-flow: row;
+            grid-template-areas:
+                "header header header"
+                    "links content content"
+                        "links content content"
+                            "footer footer footer";
+                            }
+
+                            .header {  display: grid;
+                              grid-template-columns: 1fr 1fr 1fr;
+                                grid-template-rows: 1.8fr 0.2fr 1fr;
+                                  gap: 0px 0px;
+                                    grid-auto-flow: row;
+                                      grid-template-areas:
+                                          "header-main header-main header-main"
+                                              ". . ."
+                                                  "header-sub header-sub header-sub";
+                                                    grid-area: header;
+                                                    }
+
+                                                    .header-main { grid-area: header-main; }
+
+                                                    .header-sub { grid-area: header-sub; }
+
+                                                    .links {  display: grid;
+                                                      grid-template-columns: 1fr 1fr 1fr;
+                                                        grid-template-rows: 1.6fr 0.1fr 1.4fr;
+                                                          gap: 0px 0px;
+                                                            grid-auto-flow: row;
+                                                              grid-template-areas:
+                                                                  "index index index"
+                                                                      ". . ."
+                                                                          "back back back";
+                                                                            grid-area: links;
+                                                                            }
+
+                                                                            .index { grid-area: index; }
+
+                                                                            .back { grid-area: back; }
+
+                                                                            .content {  display: grid;
+                                                                              grid-template-columns: 1fr 1fr 1fr;
+                                                                                grid-template-rows: 1.5fr 1.2fr 0.3fr;
+                                                                                  gap: 0px 0px;
+                                                                                    grid-auto-flow: row;
+                                                                                      grid-template-areas:
+                                                                                          "img img img"
+                                                                                              "content-main content-main content-main"
+                                                                                                  "content-main content-main content-main";
+                                                                                                    grid-area: content;
+                                                                                                    }
+
+                                                                                                    .img {  display: grid;
+                                                                                                      grid-template-columns: 1fr 1fr 1fr;
+                                                                                                        grid-template-rows: 1fr 1fr 1fr;
+                                                                                                          gap: 0px 0px;
+                                                                                                            grid-auto-flow: row;
+                                                                                                              grid-template-areas:
+                                                                                                                  "img-main img-main img-main"
+                                                                                                                      "img-main img-main img-main"
+                                                                                                                          "img-use img-use img-use";
+                                                                                                                            grid-area: img;
+                                                                                                                            }
+
+                                                                                                                            .img-main { grid-area: img-main; }
+
+                                                                                                                            .img-use { grid-area: img-use; }
+
+                                                                                                                            .content-main { grid-area: content-main; }
+
+                                                                                                                            .footer { grid-area: footer; }
+                                                                                                                            
