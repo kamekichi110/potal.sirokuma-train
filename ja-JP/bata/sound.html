@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>しろくま鉄道ポータルーベータ版ページ</title>
+    <link rel="stylesheet" href="https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/sound/style.css">
+    <style>
+        div.control {
+            width: 88%;
+            border: 2px black solid;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="head">しろくま鉄道ポータル<br>発車メロディ</h1>
+    </header>
+    <article>
+        <main>
+            <h1>beta</h1>
+            <br>
+            <div class="control">
+            <a onclick="start()"><img src="./img/on.png" alt="on" width="60%"></a>
+            <hr width="62%">
+            <a onclick="reset()"><img src="./img/off.png" alt="off" width="60%"></a>
+            </div>
+            <br>
+            <br>
+        </main>
+    </article>
+    <audio src="./mp3/saikyo/埼京線20.mp3" id="sounds"></audio>
+    <audio src="./mp3/vocal/001.mp3" id="vocal"></audio>
+    <script src="./sys.js"></script>
+</body>
+</html>
