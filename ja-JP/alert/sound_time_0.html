@@ -7,11 +7,13 @@
     <title>時間です</title>
     <link rel="stylesheet" href="../sound/style.css">
     <script>
-        var id = 'sound'
-        document.getElementById("sound").play()
+        window.onload = function start(){
+        var id = 'sound';
+        document.getElementById(id).play();
+        }
         function stop() {
             var id = 'sound'
-            document.getElementById(id).pause()
+            document.getElementById(id).pause();
         }
     </script>
 </head>
