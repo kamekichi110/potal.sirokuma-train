@@ -53,7 +53,8 @@
                                                             		if (typeof this.hourwake!="undefined"){ //if alarm is set
                                                                     			if (this.ctref.title==(this.hourwake+":"+this.minutewake+":"+this.secondwake)){
                                                                                 				clearInterval(jsalarm.timer)
-                                                                                                				window.location="https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/alert/sound_time_0.html"
+																								                var id = 'sound'
+                                                                                                				document.getElementById(id).play()
                                                                                                                 			}
                                                                                                                             		}
                                                                                                                                     	},
@@ -99,7 +100,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                             		this.secondselect.disabled=true
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     	}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
-
+																																																																																																																						function stop() {
+																																																																																																																							var id = 'sound'
+																																																																																																																							document.getElementById(id).pause()
+																																																																																																																						}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </script>
 </head>
 <body>
@@ -108,7 +112,7 @@
         <div><div class="leftcolumn">現在時刻:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
         <div><div class="leftcolumn">アラーム設定:</div> <span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
         <div><div class="leftcolumn">音楽はデフォルト設定以外使用できません。</div>
-        <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+        <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" onclick="stop()" />
         </div>
         </form>
 
