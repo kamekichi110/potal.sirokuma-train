@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>時間です</title>
+    <link rel="stylesheet" href="../sound/style.css">
+    <script>
+        var id = 'sound'
+        document.getElementById(id).play()
+
+        function stop() {
+            var id = 'sound'
+            document.getElementById(id).pause()
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1 class="head">しろくま鉄道ポータル<br>アラーム機能</h1>
+    </header>
+    <article>
+        <main>
+            <h1>時間です！！</h1>
+            <p><a onclick="stop()">アラームを停止する</a></p>
+            <audio src="../sound/station/JR/mp3/saikyo/埼京線20.mp3" preload="auto" loop id="sound"></audio>
+        </main>
+    </article>
+</body>
+</html>
