@@ -41,7 +41,22 @@
         * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
 
         ***********************************************/
+	   document.addEventListener('DOMContentLoaded', function(){
 
+			// 経過時刻の計算に利用する、現在の時刻を取得
+				let startTime = Date.now();
+
+					// setInterval()で5秒毎に実行
+						setInterval(function() {
+								// 変数startTimeの時刻から10分経過した場合
+										if (Date.now() > (startTime + ( 10 * 60 * 1000))) {  
+													// 実行させる処理を記述 
+
+																// 経過時刻の計算に利用する、現在の時刻を更新
+																			startTime = Date.now();
+																					}
+																						}, 5000);
+																						}, false);
         var jsalarm={
         	padfield:function(f){
             		return (f<10)? "0"+f : f
