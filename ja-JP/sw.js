@@ -1,15 +1,16 @@
-//'use strict';
 
-/* global registration */
-
-self.addEventListener('install', function (event) {
-  // skip
-  });
-
-  self.addEventListener('activate', function (event) {
-    // skip
+// インストール
+self.addEventListener('install', function (e) {
+    console.info('install', e);
     });
 
-    self.addEventListener('fetch', function (event) {
-      // skip
-      });
+    // アクティベート
+    self.addEventListener('activate', function (e) {
+        console.info('activate', e);
+        });
+
+        // フェッチ
+        self.addEventListener('fetch', function (e) {
+            console.info('fetch', e);
+            });
+            
