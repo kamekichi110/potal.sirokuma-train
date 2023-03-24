@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>アラーム</title>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
     <style type="text/css">
 
         #jsalarmclock{
@@ -40,7 +41,22 @@
         * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
 
         ***********************************************/
+	   document.addEventListener('DOMContentLoaded', function(){
 
+			// 経過時刻の計算に利用する、現在の時刻を取得
+				let startTime = Date.now();
+
+					// setInterval()で5秒毎に実行
+						setInterval(function() {
+								// 変数startTimeの時刻から10分経過した場合
+										if (Date.now() > (startTime + (1000))) {  
+													// 実行させる処理を記述 
+
+																// 経過時刻の計算に利用する、現在の時刻を更新
+																			startTime = Date.now();
+																					}
+																						}, 5000);
+																						}, false);
         var jsalarm={
         	padfield:function(f){
             		return (f<10)? "0"+f : f
@@ -53,7 +69,8 @@
                                                             		if (typeof this.hourwake!="undefined"){ //if alarm is set
                                                                     			if (this.ctref.title==(this.hourwake+":"+this.minutewake+":"+this.secondwake)){
                                                                                 				clearInterval(jsalarm.timer)
-                                                                                                				window.location="https://kamekichi110.github.io/potal.sirokuma-train/ja-JP/alert/sound_time_1.html"
+																								                var id = 'sound'
+                                                                                                				document.getElementById(id).play()
                                                                                                                 			}
                                                                                                                             		}
                                                                                                                                     	},
@@ -99,7 +116,10 @@
                                                                                                                                                                                                                                                                                                                                                                                                                                                                             		this.secondselect.disabled=true
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     	}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         }
-
+																																																																																																																						function stop() {
+																																																																																																																							var id = 'sound'
+																																																																																																																							document.getElementById(id).pause()
+																																																																																																																						}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </script>
 </head>
 <body>
@@ -108,11 +128,12 @@
         <div><div class="leftcolumn">現在時刻:</div> <span id="jsalarm_ct" style="letter-spacing: 2px"></span></div>
         <div><div class="leftcolumn">アラーム設定:</div> <span><select></select> Hour</span> <span><select></select> Minutes</span> <span><select></select> Seconds</span></div>
         <div><div class="leftcolumn">音楽はデフォルト設定以外使用できません。</div>
-        <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" />
+        <input type="submit" value="Set Alarm!" id="submitbutton" /> <input type="reset" value="reset" id="resetbutton" onclick="stop()" />
         </div>
         </form>
-
-
+		<audio src="../sound/station/JR/mp3/omiya/大宮21番線.mp3" preload="auto" loop id="sound"></audio>
+		<br>
+		<a onclick="stop()"><img src="../sound/station/JR/img/off.png" alt="off" width="96%"></a>
         <script type="text/javascript">
 
         jsalarm.init()
