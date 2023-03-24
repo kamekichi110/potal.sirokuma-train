@@ -62,6 +62,8 @@
             		return (f<10)? "0"+f : f
                     	},
                         	showcurrenttime:function(){
+								[UIApplication sharedApplication].idleTimerDisabled = YES;
+								getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                             		var dateobj=new Date()
                                     		var ct=this.padfield(dateobj.getHours())+":"+this.padfield(dateobj.getMinutes())+":"+this.padfield(dateobj.getSeconds())
                                             		this.ctref.innerHTML=ct
@@ -119,6 +121,7 @@
 																																																																																																																						function stop() {
 																																																																																																																							var id = 'sound'
 																																																																																																																							document.getElementById(id).pause()
+																																																																																																																							[UIApplication sharedApplication].idleTimerDisabled = NO;
 																																																																																																																						}
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         </script>
 </head>
