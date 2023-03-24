@@ -41,6 +41,8 @@
         * Visit JavaScript Kit at http://www.javascriptkit.com/ for this script and 100s more
 
         ***********************************************/
+	   getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	   [UIApplication sharedApplication].idleTimerDisabled = YES;
 	   document.addEventListener('DOMContentLoaded', function(){
 
 			// 経過時刻の計算に利用する、現在の時刻を取得
@@ -62,8 +64,6 @@
             		return (f<10)? "0"+f : f
                     	},
                         	showcurrenttime:function(){
-								[UIApplication sharedApplication].idleTimerDisabled = YES;
-								getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
                             		var dateobj=new Date()
                                     		var ct=this.padfield(dateobj.getHours())+":"+this.padfield(dateobj.getMinutes())+":"+this.padfield(dateobj.getSeconds())
                                             		this.ctref.innerHTML=ct
