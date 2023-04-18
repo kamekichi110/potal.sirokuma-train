@@ -2,6 +2,7 @@ div.bord {
     display: flex;
 }
 div.syubetu {
+    display: flex;
     order: 0;
     width: 30%;
     border: black solid 3px;
@@ -9,6 +10,7 @@ div.syubetu {
     scroll-snap-type: mandatory;
 }
 div.ikisaki {
+    display: flex;
     order: 1;
     width: 66%;
     border: black solid 3px;
