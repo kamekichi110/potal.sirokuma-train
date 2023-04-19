@@ -1,0 +1,41 @@
+body {
+    background-color: khaki;
+}
+.header_text {
+    font-size: 1em;
+    background-color: aqua;
+}
+.icon {
+    background-color: aqua;
+}
+img.icon {
+    width: 100%;
+    border: black solid 2px;
+    border-radius: 16px;
+}
+.content0 {
+    background-color: sandybrown;
+    border: black solid 2px;
+    border-radius: 16px;
+}
+.side {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+}
+.index0 {
+    background-color: coral;
+    color: brown;
+}
+.links {
+    background-color: black;
+    color: grey;
+}
+.copyright {
+    background-color: cadetblue;
+    color: blue;
+}
+.footer {
+    background-color: crimson;
+    color: azure;
+}
