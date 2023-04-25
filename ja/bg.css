@@ -1,0 +1,19 @@
+header {
+    background-color: cadetblue;
+}
+body {
+    background-color: black;
+}
+main {
+    background-color: khaki;
+}
+div.bar {
+    background-color: burlywood;
+    width: 100px;
+}
+div.link {
+    background-color: aquamarine;
+}
+footer {
+    background-color: coral;
+}
