@@ -24,3 +24,6 @@ img.dw {
     width: 15px;
     border: black solid 1px;
 }
+img.content {
+    width: 75%;
+}
