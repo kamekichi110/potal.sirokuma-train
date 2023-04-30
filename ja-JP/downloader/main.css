@@ -1,0 +1,26 @@
+img.icon {
+    width: 75px;
+}
+header {
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+}
+article {
+    width: 100%;
+    display: flexbox;
+}
+main {
+    background-color: blanchedalmond;
+    order: 1;
+    max-width: 70%;
+}
+div.side {
+    background-color: burlywood;
+    order: 0;
+    width: 30%;
+}
+img.dw {
+    width: 15px;
+    border: black solid 1px;
+}
