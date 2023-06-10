@@ -10,15 +10,15 @@
     font-family: sub;
     src: url(../../font/YuseiMagic-Regular.ttf);
 }
-.mainfont {
+.main {
     font-family: main;
     font-size: 1em;
 }
-.subfont {
+.sub {
     font-family: sub;
     font-size: 1em;
 }
-.sysfont {
+.sys {
     font-family: system;
     font-size: 1em;
 }
