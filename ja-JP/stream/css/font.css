@@ -1,0 +1,24 @@
+@font-face {
+    font-family: system;
+    src: url(../../../css/JNRfont.ttf);
+}
+@font-face {
+    font-family: main;
+    src: url(../../font/PottaOne-Regular.ttf);
+}
+@font-face {
+    font-family: sub;
+    src: url(../../font/YuseiMagic-Regular.ttf);
+}
+.mainfont {
+    font-family: main;
+    font-size: 1em;
+}
+.subfont {
+    font-family: sub;
+    font-size: 1em;
+}
+.sysfont {
+    font-family: system;
+    font-size: 1em;
+}

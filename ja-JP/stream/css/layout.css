@@ -1,0 +1,34 @@
+body {
+    align-items: center;
+    background-color: black;
+}
+div.side {
+    width: 30%;
+    order: 0;
+}
+main {
+    width: 70%;
+}
+article {
+    width: 100%;
+    display: flex;
+}
+header {
+    width: 100%;
+}
+div.text_info {
+    width: 100%;
+    height: 80px;
+    border: black solid 4px;
+    border-radius: 20px;
+}
+div.index {
+    width: 80%;
+    height: 240px;
+    background-color: whitesmoke;
+    overflow-y: scroll;
+}
+img.icon {
+    width: 80%;
+    border: black solid 3px;
+}
