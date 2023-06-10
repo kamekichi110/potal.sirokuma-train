@@ -1,0 +1,27 @@
+.container {  display: grid;
+    grid-template-columns: 100px 275px;
+    grid-template-rows: 100px 720px 160px 100px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "icon header"
+      "sidebar content"
+      "sidebar other"
+      "link fotter";
+    width: 375px;
+    height: 1080px;
+  }
+  
+  .icon { grid-area: icon; }
+  
+  .header { grid-area: header; }
+  
+  .content { grid-area: content; }
+  
+  .sidebar { grid-area: sidebar; }
+  
+  .other { grid-area: other; }
+  
+  .link { grid-area: link; }
+  
+  .fotter { grid-area: fotter; }  
