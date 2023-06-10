@@ -1,10 +1,22 @@
-div.side {
-    background-color: cornflowerblue;
+div.icon {
+    background-color:black;
 }
-main {
-    background-color: grey;
+div.header {
+    background-color:cadetblue
 }
-header {
-    background-color:lightgreen;
-    color: brown;
+div.content {
+    background-color:darksalmon
+}
+div.sidebar {
+    background-color:aquamarine
+}
+div.other {
+    background-color:darkgray
+}
+div.link {
+    background-color: paleturquoise;
+}
+div.fotter {
+    background-color:brown;
+    color: white;;
 }
